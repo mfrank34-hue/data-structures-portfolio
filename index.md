@@ -9,4 +9,3 @@ I am a Sports Analytics major at UNC Charlotte.
 ## Portfolio
 - [Blog](blog.md)
 - [Projects](projects.md)
-
