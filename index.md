@@ -7,7 +7,7 @@ Here I will be documenting my learning and projects throughout the semester.
 I am a Sports Analytics major at UNC Charlotte. 
 ---
 
-[About Me](about_me)
+[About Me](about_me.md)
 
 ## Portfolio
 - [Blog](blog.md)
