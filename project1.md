@@ -1,3 +1,4 @@
+
 Has the shift from a 4-team playoff format to a 12-team playoff format affected the gap in success between Power 4 schools and non-Power 4 schools in college football from 2015-2025?
 September 10, 2026
 
@@ -9,61 +10,14 @@ Data Description
 
 Data Cleaning and Preparation
 For data cleaning, I first selected the years I wanted to analyze and created a CSV file. 
-url = "https://api.collegefootballdata.com/rankings"
-headers = {
-    "Authorization": f"Bearer {API_KEY}" #Bearer token for authentication
-}
-years_to_pull = [2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025] #Years wanted to pull
-all_playoff_data = []
+<img width="1214" height="332" alt="Screenshot 2026-09-11 at 5 04 40 PM" src="https://github.com/user-attachments/assets/2453a89d-7dfb-4ccc-9f51-756be460aefa" />
 
-for year in years_to_pull:
-    query_params = {"year": year}
-    response = requests.get(url, headers=headers, params=query_params)
-    if response.status_code == 200:
-        data = response.json()
-        for team in data:
-            team["season_year"] = year
-            all_playoff_data.extend(data)
-df2 = pd.DataFrame(all_playoff_data)
-df2.to_csv("cfp_playoff_rankings.csv", index=False) #Saving data to a csv file
 
 Then I checked for any missing values and checked the type of each variable. 
-#Data cleaning and checking for missing values
-df2.isnull()
-df2.isnull().sum()
-season         0
-seasonType     0
-week           0
-polls          0
-season_year    0
-dtype: int64
-#Looking at the data types (str,float,int,bool)
-df2.dtypes
-season          int64
-seasonType        str
-week            int64
-polls          object
-season_year     int64
-dtype: object
+<img width="415" height="354" alt="Screenshot 2026-09-11 at 5 05 37 PM" src="https://github.com/user-attachments/assets/d07a543f-278e-4368-b1c4-1296cbbce2f1" />
 
 To define the conferences, I identified the Power 4 and which schools belonged to each conference. 
-#Define Conferences
-power_4 = ['ACC', 'SEC', 'Big-10', 'Big-12']
-
-school_to_conference = {
-    'Miami': 'ACC', 'SMU':'ACC', 'Virgina': 'ACC', 'Duke': 'ACC', 'North Carolina': 'ACC', 'Pittsburgh': 'ACC', 'Syracuse': 'ACC', 
-    'Virginia Tech': 'ACC', 'Wake Forest': 'ACC', 'Boston College': 'ACC', 'California': 'ACC', 'Clemson': 'ACC', 'Georgia Tech': 'ACC',
-    'Louisville': 'ACC', 'Flordia State': 'ACC', 'Standford': 'ACC', 'NC State': 'ACC', 'Norte Dame': 'ACC', 'Illinois': 'Big-10',
-    'Indiana': 'Big-10', 'Iowa': 'Big-10', 'Maryland': 'Big-10', 'Michigan': 'Big-10', 'Michigan State': 'Big-10', 'Minnesota': 'Big-10',
-    'Nebraska': 'Big-10', 'Northwestern': 'Big-10','Ohio State': 'Big-10', 'Oregon': 'Big-10', 'Penn State': 'Big-10', 'Purdue': 'Big-10',
-    'Rutgers': 'Big-10', 'UCLA': 'Big-10', 'USC': 'Big-10', 'Washington': 'Big-10', 'Wisconsin': 'Big-10', 'Arizona': 'Big-12', 
-    'Arizona State': 'Big-12', 'BYU': 'Big-12', 'Cincinnati': 'Big-12', 'Colorado': 'Big-12', 'Houston': 'Big-12', 'Iowa State': 'Big-12', 
-    'Kansas': 'Big-12', 'Kansas State': 'Big-12','Texas Tech': 'Big-12', 'UCF': 'Big-12', 'Utah': 'Big-12', 'West Virginia': 'Big-12', 
-    'Baylor': 'Big-12', 'Oklahoma State': 'Big-12', 'TCU': 'Big-12', 'Alabama': 'SEC', 'Arkansas': 'SEC', 'Auburn': 'SEC', 'Florida': 'SEC', 
-    'Georgia': 'SEC', 'Kentucky': 'SEC', 'LSU': 'SEC', 'Mississippi State': 'SEC', 'Missouri': 'SEC', 'Oklahoma': 'SEC', 'Ole Miss': 'SEC', 
-    'South Carolina': 'SEC', 'Tennessee': 'SEC', 'Texas': 'SEC', 'Texas A&M': 'SEC', 'Vanderbilt':'SEC'
-}
-
+<img width="1214" height="416" alt="Screenshot 2026-09-11 at 5 06 12 PM" src="https://github.com/user-attachments/assets/92f5d003-1ae8-489e-ba92-60dbc20b60d3" />
 
 Visualizations and Insights
     The first thing I looked at was the AP Top 25 rankings by Conference Group for Week 16 leading up to the playoffs. I made a line graph to be able to easily identify any differences between Power 4 schools and Other schools from the years 2015- 2025. 
@@ -84,3 +38,27 @@ The College Football Playoff Team Appearances by Conference shows the breakdown 
 <img width="1481" height="684" alt="image" src="https://github.com/user-attachments/assets/6f5fe258-cb3d-482b-a453-a17ef19b1ff0" />
 
 Storytelling and Narrative
+
+The visual analysis shows that within the last 10 years, the change from a 4-team playoff format to a 12-team playoff format has slightly affected the gap between Power 4 conferences and Other conferences. We can see that the rankings of the Top 25 teams not in a Power 4 conference have declined since the format change. The data also shows that even with 8 more playoff spots, Power 4 schools still make up most of the teams.   
+
+Limitations, Ethics, and Reflection
+
+When starting this project, I knew there would be limitations and possible bias. The new conference realignment after 2023 is not accounted for, and the data does not show the realignments. Another detail the dataset does not account for is Notre Dame. Notre Dame is an independent football team, meaning they do not belong to a conference. There is always going to be bias when it comes to the selection committee. Because the data relies on selection committees to determine who gets a spot in the College Football Playoffs, it is biased. With the 12-team playoff format being only 2 years old, it really limits our ability to see patterns over time. Next time, I would explore committee rankings and try to go back even further. I would want to see whether there has always been a gap between the number of Power 4 schools that received a playoff spot and the number of non-Power 4 schools. 
+
+Code and Transparency
+References:
+https://api.collegefootballdata.com/playoffs/cfp/participants
+
+https://api.collegefootballdata.com/rankings
+
+https://theacc.com/
+
+https://bigten.org/
+
+https://big12sports.com/
+
+https://www.secsports.com/
+
+Jupyter Notebook: [Studio2project1final.html](https://github.com/user-attachments/files/32131134/Studio2project1final.html)
+
+AI DISCLAIMER: For this project, I used Copilot to assist in creating the visuals. 
