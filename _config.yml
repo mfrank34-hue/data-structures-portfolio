@@ -1,9 +1,14 @@
 title: Data Science Portfolio
 description: Documenting my learning in Data Science
-theme: jekyll-theme-minimal
+remote_theme: pages-themes/cayman@v0.2.0
+plugins:
+- jekyll-remote-theme # add this line to the plugins list if you already have one
 author: Madeline Frank
 show_downloads: false
 github:
   is_project_page: false
 social_links:
   github: https://github.com/mfrank34-hue
+  linkedin: 
+
+ 
