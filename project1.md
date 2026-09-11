@@ -39,7 +39,7 @@ The College Football Playoff Team Appearances by Conference shows the breakdown 
 
 Storytelling and Narrative
 
-The visual analysis shows that within the last 10 years, the change from a 4-team playoff format to a 12-team playoff format has slightly affected the gap between Power 4 conferences and Other conferences. We can see that the rankings of the Top 25 teams not in a Power 4 conference have declined since the format change. The data also shows that even with 8 more playoff spots, Power 4 schools still make up most of the teams.   
+The visual analysis shows that within the last 10 years, the change from a 4-team playoff format to a 12-team playoff format has slightly affected the gap between Power 4 conferences and Other conferences. We can see that the rankings of the Top 25 teams not in a Power 4 conference have declined since the format change. It would be incorrect to say that there is a big affect since we only have 2 years worth of data for the 12-team format. 
 
 Limitations, Ethics, and Reflection
 
