@@ -1,2 +1,8 @@
 ## About Me
 
+  Welcome to my Data Science portfolio. Here, I will document my learning and projects throughout the semester. I’m currently a junior at the University of North Carolina at Charlotte majoring in Sports Analytics. I am a transfer student from Gaston College, where I competed in cross country for 2 seasons.  Sports are something that has always been present in my life, whether playing, watching, or keeping stats. From being a young girl playing sports to being a woman in sports now, I am passionate about women’s sports and inspiring young girls to get involved. 
+
+  I am originally from Buffalo, NY, but moved to Charlotte about 5 years ago. Sports were a big way for me to connect with other people and were part of some of my favorite memories. My earliest memories of sports are cheering on the Buffalo Bills. Being from Buffalo, I was born a Bills fan. Once I was old enough to understand the sport, I started to enjoy the games even more. My favorite sport, though, has always been basketball.  I played from age 8 until I graduated high school.  I have extensive sports experience, including assisting with youth basketball camps, doing some personal training, and currently working at the Belmont Parks and Recreation Center, where I keep score and support youth athletics.  This September, I will assist with Girls on the Run Greater Charlotte for the first time.  I am excited to coach these girls and help them become strong, independent young girls. 
+
+  Through this portfolio, I hope to combine my athletic background with data-driven insights to uncover trends in performance, fan engagement, and equity in sports. 
+
