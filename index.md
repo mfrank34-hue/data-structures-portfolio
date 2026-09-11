@@ -16,4 +16,5 @@ I am a Sports Analytics major at UNC Charlotte.
 ## Social links
 - github: https://github.com/mfrank34-hue
 - linkedin: www.linkedin.com/in/madeline-frank-0325b33b7
-- resume: 
+- resume: [MadelineFrankResume.pdf](https://github.com/user-attachments/files/32133081/MadelineFrankResume.pdf)
+
