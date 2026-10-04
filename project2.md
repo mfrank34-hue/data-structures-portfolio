@@ -58,7 +58,9 @@ HTML Link: [StudioProject2.html](https://github.com/user-attachments/files/33031
 
 Kaggle Dataset: https://www.kaggle.com/datasets/andrewsundberg/college-basketball-dataset
 
-Sources:
+AI DISCLAIMER: For this project, I used Copilot to assist in creating the visuals and some code. 
+
+## Sources:
 
 Gumm, J., Barrett, A., & Hu, G. (2015, June). A machine learning strategy for predicting march madness winners. In 2015 IEEE/ACIS 16th International Conference on Software Engineering, Artificial Intelligence, Networking and Parallel/Distributed Computing (SNPD) (pp. 1-6). IEEE.
 
