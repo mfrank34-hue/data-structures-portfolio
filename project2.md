@@ -51,7 +51,10 @@ The bias in this dataset is survivor bias. Teams that keep winning and moving on
 
 ## Code and Transparency 
 
-Link to Jupyter Notebook: [StudioProject2.html](https://github.com/user-attachments/files/33031803/StudioProject2.html)
+Link to Jupyter Notebook: [StudioProject2.ipynb](https://github.com/user-attachments/files/33031811/StudioProject2.ipynb)
+
+
+[StudioProject2.html](https://github.com/user-attachments/files/33031803/StudioProject2.html)
 
 
 
