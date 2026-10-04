@@ -7,6 +7,7 @@ This model addresses the extent to which a regression model can accurately predi
 
 ## Background and Context
 
+March Madness is a college basketball postseason tournament that crowns a national champion. There are 64 teams, not including play-in games, that compete in a bracket-style tournament to get to the championship game. The tournament has 6 total rounds and is win-or-go-home. Many people place bets or fill out brackets to predict game winners.  The betting has become so popular that it draws in fans who bet billions on the outcome (Gumm, 1).  Betting has become so popular that it rivals the Super Bowl (Kaplan, 1). Creating a perfect bracket is very difficult because of the high variance and the number of games played in the tournament; no one has ever been able to do it (Tran, 1). 
 
 ## Data Description
 
@@ -53,11 +54,17 @@ The bias in this dataset is survivor bias. Teams that keep winning and moving on
 
 Link to Jupyter Notebook: [StudioProject2.ipynb](https://github.com/user-attachments/files/33031811/StudioProject2.ipynb)
 
+HTML Link: [StudioProject2.html](https://github.com/user-attachments/files/33031803/StudioProject2.html)
 
-[StudioProject2.html](https://github.com/user-attachments/files/33031803/StudioProject2.html)
+Kaggle Dataset: https://www.kaggle.com/datasets/andrewsundberg/college-basketball-dataset
 
+Sources:
 
+Gumm, J., Barrett, A., & Hu, G. (2015, June). A machine learning strategy for predicting march madness winners. In 2015 IEEE/ACIS 16th International Conference on Software Engineering, Artificial Intelligence, Networking and Parallel/Distributed Computing (SNPD) (pp. 1-6). IEEE.
 
+Kaplan, E. H., & Garstka, S. J. (2001). March madness and the office pool. Management Science, 47(3), 369-382.
+
+Tran, A., & Ginzberg, A. Making Sense of the Mayhem: Machine Learning and March Madness.
 
 
 
